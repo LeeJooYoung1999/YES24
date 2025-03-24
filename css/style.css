@@ -1,0 +1,403 @@
+/*------------전역 시작--------------*/
+@import url('https://fonts.cdnfonts.com/css/malgun-gothic-boot');  /* 그냥 맑은고딕은 유료밖에 못찾아서 대체했습니다 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url(./reset.css);
+*{
+  font-family: 'Malgun Gothic Boot', sans-serif;                   /* 그냥 맑은고딕은 유료밖에 못찾아서 대체했습니다 */
+}
+
+body {
+  text-align: center;
+  background-color: #f8f8f8;
+  font-size: 12px;
+  color: #555;
+  min-height: 100%;
+  height: 100%;
+}
+
+.cursor{ cursor: pointer;}
+li {list-style: none;}
+/*-------------전역 끝--------------*/
+
+
+/*--------1.헤더영역 시작-----------*/
+#header {
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header .header_area {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 100px;
+  text-align: left;
+  /* border: 1px solid gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header_area h1 {
+  height: 100px;
+  text-align: center;
+}
+
+/* ------. 로그인 마크---- */
+.sever_name {
+  /* border: 1px solid black; background-color: red; */
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+/* ------. 회원가입----- */
+.sign_up {
+  border: solid 1px #ebebeb;
+  border-bottom-color: #d8d8d8;
+  border-right-color: #d8d8d8;
+  border-radius: 3px;
+  background-color: #fff;
+
+  padding: 0 12px;
+  width: 88px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0;
+  border-radius: 3px;
+}
+#header .sign_up {
+  overflow: hidden;
+  cursor: pointer;
+}
+/*--------1.헤더영역 끝//--------------*/
+
+
+/*--------2.콘텐트영역 시작-------*/
+#yscontent {
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 958px;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+.login_cont {
+  float: left;
+  width: 360px;
+}
+.login_bigbanner {
+  float: right;
+  width: 360px;
+}
+/*--------2-1.우측 광고박스-------*/
+.login_bigbanner > * {
+  width: 360px;
+  height: 360px;
+  overflow: auto;
+}
+.adimg {
+  width: 360px;
+}
+.adSmall{
+  margin-top: 10px;
+  width: 360px;
+  height: 140px;
+  overflow: hidden;
+}
+
+#yscontent .controw {
+  margin: 0 auto;
+  position: relative;
+  width: 760px;
+  text-align: left;
+}
+/*--------2-2.좌측 로그인박스 시작-------*/
+/*-----회원 | 비회원------*/
+.mem_area {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-bottom: 1xp solid #d8d8d8;
+}
+/* 회원비회원 탭 ul속성 */
+#ultabmem {
+  display: table-row;
+}
+/* 회원비회원탭 li속성 */
+.mem_area > #ultabmem li {
+  position: relative;
+}
+#ultabmem li {
+  width: 50%;
+  display: table-cell;
+}
+#ultabmem li:nth-child(1) {    /* 회원탭 */
+  width: 180px;
+  height: 40px;
+  border: 1px solid #6699cc;
+  border-bottom: none;
+  margin-bottom: 20px;
+  color: #6699cc;
+}
+#ultabmem li:nth-child(2) {    /* 비회원탭 */
+  width: 180px;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid #6699cc;
+  background-color: #f8f8f8;
+  color: #333;
+}
+/* 회원비회원탭 글자속성 */
+#ultabmem .txt {
+  display: block;
+  height: 38px;
+  line-height: 38px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 13px;
+}
+/*------회원 | 비회원 끝----*/
+
+/* 아이디 비번 입력*/
+.yesIpt {
+  box-sizing: border-box;
+  position: relative;
+
+  padding: 3px 8px 5px;
+  width: auto;
+  height: 30px;
+  line-height: 20px;
+  color: #999;
+
+  border: solid 1px #ebebeb;
+  border-top-color: #d8d8d8;
+  border-left-color: #d8d8d8;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.yesIpt.b_size {
+  padding: 9px 14px 11px;
+  width: auto;
+  height: 50px;
+  line-height: 28px;
+}
+.yesIpt.b_size input {
+  padding: 0;
+  height: 28px;
+  line-height: 27px;
+  font-size: 16px;
+  color: #999;
+}
+.yesIpt input {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  border-radius: 0;
+  background-color: transparent;
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+.yesIpt.ipt_wSizeF {
+  display: block;
+}
+#spanPW{margin-top: 10px;}
+#spanID>input:focus{color: #6699cc;  }                      /* 포커스 시 파란 글자색 */
+#spanID.focusOn,#spanPW.focusOn{border:1px solid #6699cc;}  /* 포커스 시 파란 강조선 */
+/* 아이디 비번 끝 */
+
+/* 로그인상태 유지, 아이디저장 시작 */
+.loginchk{margin-top: 20px; }
+.loginchk>span{margin-right: 11px; }
+.loginchk input{vertical-align: -4px;}
+.loginchk label{
+  font-size: 13px;
+  min-height: 20px;
+  line-height: 20px;}
+.loginchk #login,
+.loginchk #save{
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  border: solid 1px #ebebeb;
+  accent-color:#6699cc;
+}
+/* 로그인상태 유지, 아이디저장 끝 */
+
+/* 파란색 로그인버튼 */
+#btnLogin {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 60px;
+  background-color: #0080ff;
+  border-color: #0080ff;
+  border-bottom-color: #0080ff;
+  border-right-color: #0080ff;
+
+  display: inline-block;
+  vertical-align: top;
+}
+#btnLogin .txt {
+  line-height: 28px;
+  height: 28px;
+  margin: 15px 0;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  
+
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+/* 파란색 로그인버튼 끝 */
+/* //아이디 비번찾기 */
+.loginEtc{margin-top: 11px; padding-bottom: 12px;}
+.IDetc {
+  display: inline-block;
+  zoom: 1;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 30px;
+  color: #666;
+}
+.divi{
+  margin: 3px 4px 0 4px; 
+  color: #ccc;}
+/* //아이디 비번찾기 끝*/
+
+/* 소셜-로그인 시작 */
+.login_cont .login_social {padding: 15px 0 0 0;}
+.login_cont .login_social li {margin-top: 10px;}
+.btnsocial{display: block; color: #555; text-decoration: none;}
+.icon{
+  width: 39px;
+  height: 38px;
+  border-right: solid 1px #e5e5e5;
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: top;
+}
+#maincontwrap .login_cont .login_social .bWrap {
+  display: block;
+  height: 40px;
+  border: 1px solid #ebebeb;
+  border-right: solid 1px #d8d8d8;
+  border-bottom: solid 1px #d8d8d8;
+  background-color: #fff;
+}
+.icon img{
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  padding-top: 2px;
+}
+.login_social .txt {
+  margin-left: 80px;
+  line-height: 38px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;}
+
+#mobile{position: relative;}
+.ad::before {
+  content: "AD";
+  color: lightgray;
+  font-size: 0.6rem;
+  font-weight: bold;
+
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.ad::after {
+  content: "휴대폰간편로그인/간편결재매니저유료서비스광고";
+  color: lightgray;
+  font-size: 0.5rem;
+
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+}
+/* 소셜-로그인 끝 */
+/*--------2-2.좌측 로그인박스 끝-------*/
+/*--------2-3.Hidden 비회원주문 탭(.sec3) 시작-------*/
+/* 비회원 주문확인 : 주문번호 / 주문 비밀번호 */
+
+.sec3 .nonmember_num input,
+.sec3 .nonmember_psw input {
+  width: 350px;
+  height: 48px;
+  padding: 0 0 0 10px;
+
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+
+  font-size: 15px;
+}
+
+/* 비회원 주문확인 : 확인 */
+
+.sec3 .nonmember_submit a {
+  display: block;
+
+  border: 1px solid #0080ff;
+  border-radius: 3px;
+  background-color: #0080ff;
+
+  margin: 10px 0 20px 0;
+  padding: 15px;
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+}
+
+/* 비회원 주문확인 : 찾기 */
+
+.sec3 .nonmember_find p {
+  float: left;
+  padding-right: 10px;
+
+  font-size: 0.8rem;
+  color: #333;
+}
+/*--------2-3.Hidden 비회원주문 탭 끝-------*/
+/* 콘텐트영역끝 */
+
+/* 3.푸터영역 시작 */
+.botbn{
+  padding-top: 16px;
+}
+#footer .footpos{
+  margin: 0 auto;
+    width: 960px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+
+    position: relative;
+}
+address{
+  font-style: normal;
+}
+strong{font-style: normal; font-weight: bold;}
+/* 3.푸터영역 끝 */

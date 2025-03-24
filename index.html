@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yes24-index</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/yes24.js" defer></script>
+  </head>
+  <body>
+    <div id="totalwrap">
+        <!-- 헤더영역 시작 -->
+        <header id="header">
+          <div class="header_area">
+            <h1>
+              <a class="yes24_logo" href="https://www.yes24.com">
+                <img src="./source/logo_n.png" alt="예스24로고" />
+              </a>
+            </h1>
+            <span class="sever_name">로그인</span>
+            <div class="sign_up"  onclick="location.href='https://www.yes24.com/Member/Join/Accept.aspx';">회원가입</div>
+        </header>
+        <!-- 헤더영역 끝 -->
+
+        <!-- 메인영역 시작 -->
+        <main id="yscontent">
+        <div id="maincontwrap" class="controw">
+          <div class="login_cont"> <!-- 2-1. 좌측 로그인박스 -->
+            <div class="mem_area">
+              <ul id="ultabmem">
+                <li id="limem"><span class="txt member cursor">회원</span></li>
+                <li id="linomem"><span class="txt member cursor">비회원 주문확인</span></li>
+              </ul>
+            </div>
+            <div class="mem_loginform">
+              <form>
+                <fieldset>
+                  <span id="spanID" class="yesIpt b_size ipt_wSizeF"><input type="text" name="ID" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'"></span>
+                  <span id="spanPW" class="yesIpt b_size ipt_wSizeF"><input type="password" placeholder="비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'"></span>
+                  <p class="loginchk">
+                    <span>
+                      <input id="login" type="checkbox">
+                      <label for="login" class="cursor">로그인 상태 유지</label>
+                    </span>
+                    <span>
+                      <input id="save" type="checkbox">
+                      <label for="save" class="cursor">아이디 저장</label>
+                    </span>
+                  </p>
+                  <button type="button" id="btnLogin" title="로그인" class="cursor">
+                    <span class="txt">로그인</span>
+                  </button>
+                </fieldset>
+              </form>
+              <div class="loginEtc">
+                <a class="IDetc cursor">아이디 찾기</a>
+                <em class="divi">|</em>
+                <a class="IDetc cursor">비밀번호 찾기</a>
+              </div>
+            </div>
+            <ul class="login_social">
+              <li><a href="#" onclick="open1(); return false;" class="btnsocial"><span class="bWrap"><em class="icon"><img src="./source/naver.png" alt="네이버 아이콘"></em><em class="txt">네이버 아이디로 로그인</em></span></a></li>
+              <li><a href="#" onclick="open2(); return false;" class="btnsocial"><span class="bWrap"><em class="icon"><img src="./source/kakao.png" alt="카카오 아이콘"></em><em class="txt">카카오 아이디로 로그인</em></span></a></li>
+              <li><a href="#" onclick="open3(); return false;" class="btnsocial"><span class="bWrap"><em class="icon"><img src="./source/facebook.png" alt="페이스북 아이콘"></em><em class="txt">페이스북 아이디로 로그인</em></span></a></li>
+              <li><a href="https://sepay.org/spm/join?regSiteCode=HD&ctgCode=1&subCode=1" class="btnsocial ad" id="mobile"><span class="bWrap"><em class="icon"><img src="./source/mobile.png" alt="모바일 아이콘"></em><em class="txt">모바일 간편 로그인</em></span></a></li>
+            </ul>
+          </div>
+          <div class="sec3"> <!-- 2-3. 비회원주문탭 -->
+            <ul>
+              <li>
+                <p class="nonmember_num">
+                  <input type="text" placeholder="주문번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문번호'">
+                </p>
+              </li>
+              <li>
+                  <p class="nonmember_psw">
+                      <input type="text" placeholder="주문 비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문 비밀번호'">
+                  </p>
+              </li>
+              <li>
+                <p class="nonmember_submit"> <a href="#">확인</a></p>
+              </li>
+              <li class="nonmember_find">
+                  <p><a href="#">주문번호 찾기</a></p> <P>|</P> <p><a href="#">주문 비밀번호 찾기</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="login_bigbanner"> <!-- 2-2. 우측 광고박스 -->
+            <div class = "adUpper">
+              <img class="adimg cursor" src="./source/adUpper.png" alt="상단광고배너"  onclick="location.href='https://event.yes24.com/yesBenefit'"></img>
+            </div>
+            <div class="adSmall">
+              <img class="adimg cursor" src="./source/addBelow.png" alt="하단광고배너"  onclick="location.href='http://ticket.yes24.com/New/Genre/GenreBridge.aspx?genre=15460&id=1290'"></img>
+            </div>
+        </div>
+        </div>
+      </main>
+        <!-- 메인영역 끝 -->
+
+        <!-- 푸터영역 시작 -->
+        <footer id="footer">
+          <div class="botbn">
+            <img src="./source/bn_login_n_960x60.gif" alt="회원가입 배너" onclick="location.href='https://www.yes24.com/notice/FirstClass/newmemCoupon.aspx'"></img>
+          </div>
+          <div class="footpos">
+            <address>"Copyright ©"
+              <strong>YES24 Corp</strong>
+            "All Rights Reserved"
+            </address>
+          </div>
+        </footer>
+        <!-- 푸터영역 끝 -->
+    </div>
+  </body>
+</html>
