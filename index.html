@@ -10,7 +10,7 @@
   <body>
     <div id="totalwrap">
         <!-- 헤더영역 시작 -->
-        <header id="header">
+       <header id="header">
           <div class="header_area">
             <h1>
               <a class="yes24_logo" href="https://www.yes24.com">
@@ -35,7 +35,7 @@
             <div class="mem_loginform">
               <form>
                 <fieldset>
-                  <span id="spanID" class="yesIpt b_size ipt_wSizeF"><input type="text" name="ID" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'"></span>
+                  <span id="spanID" class="yesIpt b_size ipt_wSizeF"><input type="text" name="ID" class="focusbox" placeholder="아이디" onfocus="this.placeholder=''" onblur="this.placeholder='아이디'"></span>
                   <span id="spanPW" class="yesIpt b_size ipt_wSizeF"><input type="password" placeholder="비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='비밀번호'"></span>
                   <p class="loginchk">
                     <span>
@@ -47,9 +47,10 @@
                       <label for="save" class="cursor">아이디 저장</label>
                     </span>
                   </p>
-                  <button type="button" id="btnLogin" title="로그인" class="cursor">
+                  <!-- //파란색 로그인버튼 -->
+                  <div type="button" id="btnLogin" title="로그인" class="cursor">
                     <span class="txt">로그인</span>
-                  </button>
+                  </div>
                 </fieldset>
               </form>
               <div class="loginEtc">
@@ -64,36 +65,32 @@
               <li><a href="#" onclick="open3(); return false;" class="btnsocial"><span class="bWrap"><em class="icon"><img src="./source/facebook.png" alt="페이스북 아이콘"></em><em class="txt">페이스북 아이디로 로그인</em></span></a></li>
               <li><a href="https://sepay.org/spm/join?regSiteCode=HD&ctgCode=1&subCode=1" class="btnsocial ad" id="mobile"><span class="bWrap"><em class="icon"><img src="./source/mobile.png" alt="모바일 아이콘"></em><em class="txt">모바일 간편 로그인</em></span></a></li>
             </ul>
-          </div>
-          <div class="sec3"> <!-- 2-3. 비회원주문탭 -->
-            <ul>
-              <li>
-                <p class="nonmember_num">
-                  <input type="text" placeholder="주문번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문번호'">
-                </p>
-              </li>
-              <li>
-                  <p class="nonmember_psw">
-                      <input type="text" placeholder="주문 비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문 비밀번호'">
-                  </p>
-              </li>
-              <li>
-                <p class="nonmember_submit"> <a href="#">확인</a></p>
-              </li>
-              <li class="nonmember_find">
-                  <p><a href="#">주문번호 찾기</a></p> <P>|</P> <p><a href="#">주문 비밀번호 찾기</a></p>
-              </li>
-            </ul>
-          </div>
-          <div class="login_bigbanner"> <!-- 2-2. 우측 광고박스 -->
+            <div class="sec3"> <!-- 2-3. 비회원주문탭 -->
+              <form>
+                <fieldset>
+                  <span id="nonmember_num" class="yesIpt b_size ipt_wSizeF"><input type="text" name="ID" placeholder="주문번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문번호'"></span>
+                  <span id="nonmember_psw" class="yesIpt b_size ipt_wSizeF"><input type="password" placeholder="주문 비밀번호" onfocus="this.placeholder=''" onblur="this.placeholder='주문 비밀번호'"></span>
+                  <!-- //파란색 확인버튼 -->
+                  <div type="button" id="btnLogin" title="확인" class="cursor">
+                    <span class="txt">확인</span>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="loginEtc">
+                <a class="IDetc cursor">주문번호 찾기</a>
+                <em class="divi">|</em>
+                <a class="IDetc cursor">주문 비밀번호 찾기</a>
+              </div>
+           </div>
+          </div>   
+        <div class="login_bigbanner"> <!-- 2-2. 우측 광고박스 -->
             <div class = "adUpper">
               <img class="adimg cursor" src="./source/adUpper.png" alt="상단광고배너"  onclick="location.href='https://event.yes24.com/yesBenefit'"></img>
             </div>
             <div class="adSmall">
               <img class="adimg cursor" src="./source/addBelow.png" alt="하단광고배너"  onclick="location.href='http://ticket.yes24.com/New/Genre/GenreBridge.aspx?genre=15460&id=1290'"></img>
             </div>
-        </div>
-        </div>
+        </div>        
       </main>
         <!-- 메인영역 끝 -->
 

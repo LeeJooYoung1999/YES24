@@ -148,7 +148,7 @@ li {list-style: none;}
   height: 40px;
   border: 1px solid #6699cc;
   border-bottom: none;
-  margin-bottom: 20px;
+  
   color: #6699cc;
 }
 #ultabmem li:nth-child(2) {    /* 비회원탭 */
@@ -216,7 +216,8 @@ li {list-style: none;}
 }
 #spanPW{margin-top: 10px;}
 #spanID>input:focus{color: #6699cc;  }                      /* 포커스 시 파란 글자색 */
-#spanID.focusOn,#spanPW.focusOn{border:1px solid #6699cc;}  /* 포커스 시 파란 강조선 */
+#spanID.focusOn,
+#spanPW.focusOn{border:1px solid #6699cc;}  /* 포커스 시 파란 강조선 */
 /* 아이디 비번 끝 */
 
 /* 로그인상태 유지, 아이디저장 시작 */
@@ -340,7 +341,7 @@ li {list-style: none;}
 /*--------2-2.좌측 로그인박스 끝-------*/
 /*--------2-3.Hidden 비회원주문 탭(.sec3) 시작-------*/
 /* 비회원 주문확인 : 주문번호 / 주문 비밀번호 */
-
+/* .sec3>ul{margin-top: 60px;} */
 .sec3 .nonmember_num input,
 .sec3 .nonmember_psw input {
   width: 350px;
@@ -379,6 +380,10 @@ li {list-style: none;}
   font-size: 0.8rem;
   color: #333;
 }
+/* 비회원 주문확인 탭 포커스 효과 */
+#nonmember_psw{margin-top: 10px;}
+#nonmember_num>input:focus{color: #6699cc;  }                      /* 포커스 시 파란 글자색 */
+#nonmember_num.focusOn,#nonmember_psw.focusOn{border:1px solid #6699cc;}  /* 포커스 시 파란 강조선 */
 /*--------2-3.Hidden 비회원주문 탭 끝-------*/
 /* 콘텐트영역끝 */
 
