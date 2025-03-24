@@ -1,11 +1,11 @@
 // --------------------회원/비회원 탭--------------------------------
 // 회원 
-const member = document.querySelector('#ultabmem>#limem>.member') // 회원
+const member = document.querySelector('#ultabmem>#limem') // 회원
 let members = document.querySelectorAll('main .mem_loginform, main .login_social') // 회원 하위내역
 member.style.display = 'block' // 초기 설정
 
 // 비회원
-const non_member = document.querySelector('#ultabmem>#linomem>.member'); // 비회원
+const non_member = document.querySelector('#ultabmem>#linomem'); // 비회원
 let non_members = document.querySelector('main .sec3') // 비회원 하위내역
 non_members.style.display = 'none' // 초기설정
 
@@ -66,6 +66,9 @@ function member_style(element) {
   }
 
 // ---------------------------------------------------------------
+let focusbox = document.querySelector('.focusbox') // 포커스박스
+focusbox.addEventListener()
+
 
 // --------------------SNS로그인--------------------------------
 //네이버로 로그인
